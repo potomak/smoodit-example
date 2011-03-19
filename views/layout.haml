@@ -3,36 +3,10 @@
   %head
     %meta{'http-equiv' => 'Content-Type', :content => 'text/html;charset=utf-8'}
 
-    / Begin Facebook Open Graph Metadata
-    %meta{:property => 'og:title', :content => 'smoodit-example'}
-    %meta{:property => 'og:type', :content => 'product'}
-    %meta{:property => 'og:url', :content => 'http://smoodit-example.heroku.com'}
-    %meta{:property => 'og:image', :content => 'http://smoodit-example.heroku.com/images/smoodit-example.png'}
-    %meta{:property => 'og:site_name', :content => 'smoodit-example'}
-    %meta{:property => 'fb:admins', :content => '1207768639'}
-    %meta{:property => 'og:description', :content => 'smoodit-example'}
-    / End Facebook Open Graph Metadata
-
     %title= 'smoodit-example'
 
     %script{:src => '/javascripts/jquery-1.5.1.min.js', :type => 'text/javascript'}
     %link{:href => '/stylesheets/style.css', :media => 'all', :rel => 'stylesheet', :type => 'text/css'}
-    
-    %link{:href => '/favicon.ico', :rel => 'shortcut icon'}
-    %link{:href => '/favicon.ico', :rel => 'icon', :type => 'image/ico'}
-    %link{:href => '/images/smoodit-example.png', :rel => 'apple-touch-icon'}
-    %link{:href => '/images/smoodit-example.png', :rel => 'fluid-icon'}
-
-    :javascript
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-2935139-14']);
-      _gaq.push(['_trackPageview']);
-
-      (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
 
   %body
     #container

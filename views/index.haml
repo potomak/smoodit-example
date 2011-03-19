@@ -1,0 +1,21 @@
+- if defined? @user
+  :javascript
+    $(document).ready(function() {
+      $('#loader').show();
+      request = $.get('/current_smood', function(data) {
+        $('#loader').hide();
+        $('#current_smood').html(data);
+      });
+    });
+
+  %a{:href => "/logout"} logout
+
+  %h2= @user.username
+
+  #loader{:style => "display: none"}
+    %img{:src => "/images/loader.gif"}
+
+  #current_smood
+  
+- else
+  %a{:href => "/oauth/connect"} connect with smood.it

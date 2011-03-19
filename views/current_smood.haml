@@ -1,0 +1,5 @@
+- if @smood
+  %p
+    = @smood.mood
+    %br
+    = @smood.tags.collect(&:name).join(", ") if @smood.tags.collect(&:name)

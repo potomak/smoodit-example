@@ -1,6 +1,6 @@
 # Smood it example app
 
-This is an example app built using the Smood it Ruby gem [https://github.com/potomak/smoodit](https://github.com/potomak/smoodit).
+This is an example app built using the **Smood it Ruby gem** [https://github.com/potomak/smoodit](https://github.com/potomak/smoodit).
 
 ## How to
 
@@ -25,7 +25,7 @@ Set `CLIENT_TOKEN` and `CLIENT_SECRET` environment variables with your app consu
     $ cd myapp
     $ rackup
 
-Now go to `http://localhost:9292`
+Now go to [http://localhost:9292](http://localhost:9292)
 
 ### Deploy application
 
